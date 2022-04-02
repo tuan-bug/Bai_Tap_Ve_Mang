@@ -1,21 +1,14 @@
-#include<iostream>
-
-using namespace std;
 
 int findmax(int a, int b){
 	if(a < b)
 		return b;
 	return a;
 }
-
-
 int findmin(int a, int b){
 	if(a < b)
 		return a;
 	return b;
 }
-
-
 void output_array(int a[], int n){
 	int max = a[0];
 	int min = a[0];
