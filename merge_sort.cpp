@@ -25,7 +25,7 @@ void merge(int arr[], int l, int m, int r){
 }
 
 void merge_sort(int arr[], int l, int r){
-    if(l < r){
+    if(l < R){
         int M = (l + r) / 2;
         merge_sort(arr,l,M);
         merge_sort(arr, M + 1, r);
