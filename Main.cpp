@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int arr[1000];
+    int arr[100];
     int n;
     do{
 	    cout << "Nhap vao so luong mang : ";
