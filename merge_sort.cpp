@@ -1,26 +1,26 @@
 void merge(int arr[], int l, int m, int r){
-    int TA[100];
+    int T[100];
     int i = l, j = m + 1;
     for(int k = l; k <= r;k++){
         if(i > m){
-            TA[k] = arr[j];
+            T[k] = arr[j];
             j++;
         } else if(j > r){
-            TA[k] = arr[i];
+            T[k] = arr[i];
             i++;
         }else{
             if(arr[i] < arr[j]){
-                TA[k] = arr[i];
+                T[k] = arr[i];
                 i++;
             }else{
-                TA[k] = arr[j];
+                T[k] = arr[j];
                 j++;
             }
             
         }
     }
     for(int k = l; k <= r;k++){
-        arr[k] = TA[k];
+        arr[k] = T[k];
     }
 }
 
